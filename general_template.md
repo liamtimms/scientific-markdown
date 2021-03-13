@@ -22,8 +22,9 @@ eqnPrefix:
 bibliography: ./library.bib
 csl: ./ieee.csl
 date: \today
-header-includes: \usepackage{float}
-  \floatplacement{figure}{H}
+header-includes:
+  - \usepackage{float}
+  - \floatplacement{figure}{H}
 ---
 
 # Introduction {#sec:intro}
@@ -42,7 +43,7 @@ This is a comment. It will not appear in compiled versions.
 4. `secnumdepth` determines how many subsections deep are assigned numbers.
 5. `secPrefix` `figPrefix`, `tblPrefix`, etc. these set the text used to refer to a specific type of reference object ("Fig. 1" rather than "figure 1" for example)
 6. `bibliography` should point to a `.bib` "bibtex" library file. I commonly output this from Zotero but Mendeley and other literature managers work too. You'll need the keys from this file to make citations.
-t another BS tech trying to navigate through law technicalities. People need to stop acting like cookies are the problem themselves. It's the act of profiling people and pushing info without their consent that is the problem.
+   t another BS tech trying to navigate through law technicalities. People need to stop acting like cookies are the problem themselves. It's the act of profiling people and pushing info without their consent that is the problem.
 
 7. `csl` this is what determines the formating of references. Most of the time the IEEE standard is fine but alternatives canbe found here:
 8. `date` this is totally optional but here we are calling the LaTeX command `\today` to add the date the document is compiled.
@@ -59,7 +60,6 @@ You can refer to tables with [@tbl:imagequality]. If you want to add a footnote 
 [^footnote]: this is a footnote.
 
 # The Pandoc commands and recommendations
-
 
 Subsections use the same label and reference syntax as full sections (see [@sec:plaintext]). Inline math uses the same syntax as LaTeX, $\gamma=m\chi+\beta$.
 
