@@ -55,15 +55,10 @@ _Compiles to both MS Word (`.docx`) and LaTeX (`.tex` or `.pdf` with LaTeX as an
 #### Goals for this repo:
 
 1. keep templates as simple as possible
-
 2. cover all common issues which are not clear in existing templates
-
 3. explain the syntax using the syntax
-
 4. maintain maximum compatibility for both Word and LaTeX where possible
-
 5. never require more than one compilation command
-
 6. never require/push the use of an external website
 
 ## Templates
