@@ -43,13 +43,11 @@ This is a comment. It will not appear in compiled versions.
 4. `secnumdepth` determines how many subsections deep are assigned numbers.
 5. `secPrefix` `figPrefix`, `tblPrefix`, etc. these set the text used to refer to a specific type of reference object ("Fig. 1" rather than "figure 1" for example)
 6. `bibliography` should point to a `.bib` "bibtex" library file. I commonly output this from Zotero but Mendeley and other literature managers work too. You'll need the keys from this file to make citations.
-   t another BS tech trying to navigate through law technicalities. People need to stop acting like cookies are the problem themselves. It's the act of profiling people and pushing info without their consent that is the problem.
-
 7. `csl` this is what determines the formating of references. Most of the time the IEEE standard is fine but alternatives canbe found here:
 8. `date` this is totally optional but here we are calling the LaTeX command `\today` to add the date the document is compiled.
 9. `header-includes` these are additional options which will get inserted into the LaTeX header before pdf compilation. I recommend these two in particular to change the default behavior of "floats" in LaTeX but more could be added.
 
-I also recommend setting a nicer font for better computer screen reading in the compiled versions. I use `fontfamily: utopia`.
+I also recommend setting a nicer font for better computer screen reading in the compiled versions. Personally, I set `fontfamily: utopia` but you may want to checkout which fonts are available on your system.
 
 ## Why Markdown? {#sec:plaintext}
 
@@ -85,7 +83,7 @@ We need to end with a blank section for "References." This will be filled out du
 
 ![a caption for te second part](./figs/part2.png){#fig:part2}
 
-This is a multi-part figure where you can refer to each section independently and each is coming from it's own file. In general, I do not recommend this but it's here for completeness. The caption for th whole figure is given like this.
+This is a multi-part figure where you can refer to each section independently and each is coming from its own file. In general, I do not recommend this but I have found it useful before. The caption for th whole figure is given like this.
 
 </div>
 
