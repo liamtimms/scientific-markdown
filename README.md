@@ -6,6 +6,8 @@ Scripts and templates for writing a scientific paper in markdown formatting. Mak
 git clone https://github.com/liamtimms/bashscripts.git
 ```
 
+I also recommend installing [pandoc](https://pandoc.org/) and you'll need a distribution of LaTeX if you want to compile `.tex` or `.pdf` files from this. 
+
 ## Why?
 
 ### Current solutions
