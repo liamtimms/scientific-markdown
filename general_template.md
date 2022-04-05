@@ -47,21 +47,18 @@ This is a comment. It will not appear in compiled versions.
 8. `date` this is totally optional but here we are calling the LaTeX command `\today` to add the date the document is compiled.
 9. `header-includes` these are additional options which will get inserted into the LaTeX header before pdf compilation. I recommend these two in particular to change the default behavior of "floats" in LaTeX but more could be added.
 
-I also recommend setting a nicer font for better computer screen reading in the compiled versions. Personally, I set `fontfamily: utopia` but you may want to checkout which fonts are available on your system.
+I also recommend setting a nicer font for better computer screen reading in the compiled versions. Personally, I set `fontfamily: utopia` but you may want to check out which fonts are available on your system.
 
 ## Why Markdown? {#sec:plaintext}
 
 # Methods {#sec:methods}
 
-You can refer to tables with [@tbl:imagequality]. If you want to add a footnote you can just do [^footnote].
+You can refer to tables with [@tbl:imagequality]. If you want to add a footnote you can just do it like this [^footnote].
 
-[^footnote]: this is a footnote.
+[^footnote]: this is a footnote. Footnotes aren't recommended for most journal papers.
 
-# The Pandoc commands and recommendations
 
-Subsections use the same label and reference syntax as full sections (see [@sec:plaintext]). Inline math uses the same syntax as LaTeX, $\gamma=m\chi+\beta$.
-
-Table: This is a table caption. I strongly recommend using the table syntax below. It works by far the best when combined with Prettier. The ":" determines alignment and it's also one of the most readable options.
+Table: This is a table caption. I strongly recommend using the table syntax used here. It works by far the best when combined with `prettier` for autoformatting of the markdown itself. The ":" determines alignment of the objects within the columns, both in the compilted output and in the automatic formatting from `prettier`.
 {#tbl:tablename}
 
 |        | A           |     B      |           C |
@@ -70,7 +67,7 @@ Table: This is a table caption. I strongly recommend using the table syntax belo
 | Median | $27$        |    $13$    |        $10$ |
 |   Mode | $546\pm189$ | $54\pm144$ | $8000\pm82$ |
 
-We need to end with a blank section for "References." This will be filled out during `pandoc` citation processing (`-C` options).
+Unfortunately, tables are the one element of scientific papers where I have encounted noticable limitations on this markdown-based approach. I have not yet found a good solution to deal with multiheader support or merged/streched cells in Markdown. An argument could be made to avoid highly complex tables whenever possible in writing (anything with lots of data should be a figure, anything with lots of categorization information should be a supplemental data file), however they are sometimes necessary. In these cases, I recommend deciding on a targeted output (either LaTeX/pdf or Word), using a placeholder table in the Markdown document (to make automatic references easy and organization) and then dealing with any further table complexity in the target format.
 
 ## Figures
 
@@ -83,8 +80,14 @@ We need to end with a blank section for "References." This will be filled out du
 
 ![a caption for te second part](./figs/part2.png){#fig:part2}
 
-This is a multi-part figure where you can refer to each section independently and each is coming from its own file. In general, I do not recommend this but I have found it useful before. The caption for th whole figure is given like this.
+This is a multi-part figure where you can refer to each section independently and each is coming from its own file. The caption for th whole figure is given like this. In general, I do not recommend constructing figures like this but I have found it useful before. It's usually better to make a composite figure in a graphics editing/painting program (e.g. Krita) then put it in as one image.
+
+# The Pandoc commands and recommendations
+
+Subsections use the same label and reference syntax as full sections (see [@sec:plaintext]). Inline math uses the same syntax as LaTeX, $\gamma=m\chi+\beta$.
 
 </div>
+
+We need to end with a blank section for "References." This will be filled out during `pandoc` citation processing (`-C` options).
 
 # References
