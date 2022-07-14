@@ -8,6 +8,8 @@ git clone https://github.com/liamtimms/bashscripts.git
 
 I also recommend installing [pandoc](https://pandoc.org/) and you'll need a distribution of LaTeX if you want to compile `.tex` or `.pdf` files from this. On Linux I use `texlive` (on Windows I use MiKTeX but I haven't tested `pandoc` on Windows with it).
 
+To get started look at [general template](genderal_template.md).
+
 ## Why?
 
 ### Current solutions
