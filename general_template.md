@@ -71,22 +71,22 @@ Unfortunately, tables are the one element of scientific papers where I have enco
 
 ## Figures
 
-![This is a normal figure. Here is the caption.](./figs/figurefilename.png){#fig:figurelabel}
+![This is a normal figure. Here is the caption.](./figs/figurefilename.jpg){#fig:figurelabel}
 
-![This is a figure with an additional option. Note that the figure label comes last and the other options don't need a #. Options are passed to LaTeX during compilation.](./figs/smallerfigure.png){ height=50% #fig:threshold }
+![This is a figure with an additional option. Note that the figure label comes last and the other options don't need a #. Options are passed to LaTeX during compilation.](./figs/smallerfigure.jpg){ height=50% #fig:threshold }
 
 <div id="fig:multifigure">
-![a caption for the first part](./figs/part1.png){#fig:part1}
+![a caption for the first part](./figs/part1.jpg){#fig:part1}
 
-![a caption for te second part](./figs/part2.png){#fig:part2}
+![a caption for te second part](./figs/part2.jpg){#fig:part2}
+
+</div>
 
 This is a multi-part figure where you can refer to each section independently and each is coming from its own file. The caption for th whole figure is given like this. In general, I do not recommend constructing figures like this but I have found it useful before. It's usually better to make a composite figure in a graphics editing/painting program (e.g. Krita) then put it in as one image.
 
 # The Pandoc commands and recommendations
 
 Subsections use the same label and reference syntax as full sections (see [@sec:plaintext]). Inline math uses the same syntax as LaTeX, $\gamma=m\chi+\beta$.
-
-</div>
 
 We need to end with a blank section for "References." This will be filled out during `pandoc` citation processing (`-C` options).
 
