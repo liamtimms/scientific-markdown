@@ -29,7 +29,7 @@ header-includes:
 
 # Introduction {#sec:intro}
 
-This is a section. You can refer to this section using [@sec:intro]. If you want to cite literature you can do so with a citation [@important_paper]. Note that tables, sections and figures will all get some prefix in front of them (in labeling, referencing and compiling) but citations are just `@` followed by the label defined in the `.bib` file.
+It is a good idea to view this document "raw" format if accessing it on github.com. This is a section. You can refer to this section using [@sec:intro]. If you want to cite literature you can do so with a citation [@important_paper]. Note that tables, sections and figures will all get some prefix in front of them (in labeling, referencing and compiling) but citations are just `@` followed by the label defined in the `.bib` file.
 
 <!--
 This is a comment. It will not appear in compiled versions.
